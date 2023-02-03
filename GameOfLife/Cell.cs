@@ -11,6 +11,10 @@ public class Cell
 
     public bool NextGen(int aliveNeighbours)
     {
+        if(aliveNeighbours == 2 || aliveNeighbours == 3)
+        {
+            return true;
+        }
         return false;
     }
 }
